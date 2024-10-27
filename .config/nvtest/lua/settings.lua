@@ -83,7 +83,6 @@ require('nvim-ts-autotag').setup({
 
 vim.opt.timeoutlen=200
 
-vim.keymap.set("i","jk","<ESC>")
 -- recommended mappings
 -- resizing splits
 -- these keymaps will also accept a range,
@@ -104,4 +103,4 @@ vim.keymap.set('n', '<leader><leader>j', require('smart-splits').swap_buf_down)
 vim.keymap.set('n', '<leader><leader>k', require('smart-splits').swap_buf_up)
 vim.keymap.set('n', '<leader><leader>l', require('smart-splits').swap_buf_right)
 
-vim.keymap.set('t', 'jk', '<C-\\><C-n>')
+vim.keymap.set('t', '<ESC>', '<C-\\><C-n>')

@@ -20,6 +20,9 @@ aliases=(
 plugins=(
   git
   bashmarks
+	colored-man-pages
+	sudo
+
 )
 
 
@@ -36,3 +39,4 @@ alias cd="z"
 
 export PATH=$PATH:~/.cargo/bin
 alias nv="NVIM_APPNAME='nvtest' nvim"
+alias inpack="python3 ~/script/packages.py"
