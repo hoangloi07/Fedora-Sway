@@ -231,3 +231,5 @@ bindgesture swipe:left workspace next
 
 bindsym $mod+i exec --no-startup-id brightnessctl s 5%+
 bindsym $mod+o exec --no-startup-id brightnessctl s 5%-
+
+bindsym $mod+p exec grim -  | wl-copy --type image/png

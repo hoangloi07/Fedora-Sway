@@ -19,6 +19,7 @@ packages = [
     "flatpak",
     "pamixer",
     "xset",
+    "grimp",
     "slurp",
     "zathura",
     "zathura-plugins-all"
