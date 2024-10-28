@@ -13,6 +13,7 @@ packages = [
     "exa",
     "bat",
     "waybar",
+    "mako",
     "git",
     "neovim",
     "fzf",
@@ -22,7 +23,9 @@ packages = [
     "grim",
     "slurp",
     "zathura",
-    "zathura-plugins-all"
+    "zathura-plugins-all",
+    "hyprland",
+    "hyprpaper"
 ]
 
 listpkg = ""
