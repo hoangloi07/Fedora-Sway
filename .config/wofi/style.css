@@ -1,17 +1,18 @@
 /* The name of the window itself */
 #window {
-  background-color: rgba(24, 24, 24, 0.6);
+  background-color: rgba(24, 24, 24, 0.9);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   font-size: 1.2rem;
   /* The name of the box that contains everything */
 }
 #window #outer-box {
+	font-size: 1.5rem;
   /* The name of the search bar */
   /* The name of the scrolled window containing all of the entries */
 }
 #window #outer-box #input {
-  background-color: rgba(24, 24, 24, 0.6);
+  background-color: rgba(24, 24, 24, 0.9);
   color: #f2f2f2;
   border: none;
   border-bottom: 1px solid rgba(24, 24, 24, 0.2);

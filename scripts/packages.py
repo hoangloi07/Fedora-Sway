@@ -25,8 +25,25 @@ packages = [
     "zathura",
     "zathura-plugins-all",
     "hyprland",
-    "hyprpaper"
+    "hyprpaper",
+    "hyprlock",
+    "hypridle",
+    "pipewire",
+    "libgtop2",
+    "bluez",
+    "bluez-tools",
+    "grimblast",
+    "hyprpicker",
+    "btop",
+    "NetworkManager",
+    "wl-clipboard",
+    "swww",
+    "brightnessctl",
+    "power-profiles-daemon",
+    "gvfs",
+    "playerctl"
 ]
+
 
 listpkg = ""
 
