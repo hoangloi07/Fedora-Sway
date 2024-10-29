@@ -4,19 +4,33 @@
   "modules": [
     "title",
     "separator",
-    "os",
+    {
+        "type": "os",
+	"format": "{2}"
+    },
     "host",
-    "kernel",
+    {
+        "type": "kernel",
+	"format": "{2}"
+    },
     "uptime",
     "packages",
-    "shell",
+    {
+        "type": "shell", 
+	"format": "{1}"
+    },
     "de",
     "wm",
-    "cpu",
-    "gpu",
+    {
+        "type" :"cpu",
+	"format": "{1}" 
+    },
     "memory",
     "swap",
-    "disk",
+    {
+        "type": "disk",
+	"format": "{1} ({3})"
+    },
     "battery",
     "break",
     "colors"

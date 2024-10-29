@@ -10,6 +10,7 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 -- Define the plugins
 local plugins = {
 	-- nvim-cmp
+  
 	{
 		"hrsh7th/nvim-cmp",
 		dependencies = {
@@ -17,9 +18,6 @@ local plugins = {
 			"hrsh7th/cmp-buffer",
 			"hrsh7th/cmp-nvim-lsp",
 			"hrsh7th/cmp-path",
-			"hrsh7th/cmp-vsnip",
-			"hrsh7th/vim-vsnip-integ",
-			"hrsh7th/vim-vsnip",
 		},
 	},
 	{
@@ -104,10 +102,21 @@ local plugins = {
 	},
 
 	-- LSP
+  {
+    "williamboman/mason.nvim",
+    opts = {},
+  },
 	{
 		"neovim/nvim-lspconfig",
 		event = "BufRead",
 	},
+  {
+    "L3MON4D3/LuaSnip",
+    version = "v2.*", 
+  },
+  {
+    'saadparwaiz1/cmp_luasnip'
+  },
 
 	-- Complete parentheses
 	{
@@ -171,6 +180,7 @@ local plugins = {
       end
   },
   { 'mrjones2014/smart-splits.nvim' },
+  { "chrisgrieser/nvim-spider", lazy = true },
 }
 
 -- Load the plugins
