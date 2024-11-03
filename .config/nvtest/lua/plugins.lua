@@ -9,6 +9,14 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
 -- Define the plugins
 local plugins = {
+  {
+    "xiyaowong/transparent.nvim"
+  },
+  {
+    "hachy/eva01.vim",
+    lazy = false,
+    priority = 1000,
+  },
 	-- nvim-cmp
   
 	{
@@ -205,3 +213,4 @@ require("configs.nvim-cmp")
 require("configs.telescope")
 require("configs.vimtex")
 require("configs.codeql")
+require("configs.transparent")

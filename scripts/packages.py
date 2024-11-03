@@ -13,7 +13,6 @@ packages = [
     "exa",
     "bat",
     "waybar",
-    "mako",
     "git",
     "neovim",
     "fzf",
@@ -36,7 +35,10 @@ packages = [
     "gvfs",
     "playerctl",
     "stow",
-    "nodejs"
+    "nodejs",
+    "clang",
+    "clang-tools-extra",
+    "rofi"
 ]
 
 

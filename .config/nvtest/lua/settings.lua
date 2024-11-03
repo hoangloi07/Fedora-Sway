@@ -1,3 +1,5 @@
+--
+vim.wo.fillchars='eob: '
 -- Leader is space
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","

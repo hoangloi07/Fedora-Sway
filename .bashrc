@@ -37,10 +37,13 @@ alias la="exa -la"
 alias cd="z"
 
 
-export PATH=$PATH:~/.cargo/bin
+export PATH=$PATH:~/.cargo/bin:/home/linuxbrew/.linuxbrew/bin
 alias nv="NVIM_APPNAME='nvtest' nvim"
 alias inpack="python3 ~/scripts/packages.py"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
+
+set -o vi
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"

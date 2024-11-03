@@ -1,0 +1,17 @@
+theme = "meliora2"
+
+
+[editor]
+line-number = "relative"
+bufferline = "always"
+
+[keys.normal]
+"tab" = ":bn"
+"S-tab" = ":bp" 
+"S-v" = ["extend_to_line_bounds","select_mode"]
+"backspace" = "move_char_left"
+"ret" = "move_line_down"
+
+
+[keys.select]
+"S-v" = ["extend_to_line_bounds"]

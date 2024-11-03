@@ -1,17 +1,18 @@
 -- In your init.lua or plugin config file
+
 require("lualine").setup({
 	options = {
-		theme = "auto", -- or 'dracula', 'tokyonight', or your preferred theme
-		section_separators = { left = "", right = "" },
+		theme = "auto",
 		component_separators = { left = "", right = "" },
 		icons_enabled = true,
 		globalstatus = true,
 	},
 	sections = {
-		lualine_a = {  },
-		lualine_b = { },
+		lualine_a = {},
+		lualine_b = {},
 		lualine_c = {
-			"mode", {"filename", file_status = true, path = 0 }, -- 0 = just filename, 1 = relative path, 2 = absolute path
+			"mode",
+			{ "filename", file_status = true, path = 0 },
 		},
 		lualine_x = {
 			{
@@ -22,13 +23,14 @@ require("lualine").setup({
 			"encoding",
 			-- "fileformat",
 			-- "filetype",
-      "progress",
-      "location",
-      "branch",
-      "diff" 
+			"progress",
+			"location",
+			"branch",
+			"diff",
 		},
-		lualine_y = { },
-		lualine_z = { },
+
+		lualine_y = {},
+		lualine_z = {},
 	},
 	inactive_sections = {
 		lualine_a = {},
