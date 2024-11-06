@@ -9,16 +9,37 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
 -- Define the plugins
 local plugins = {
-  {
-    "xiyaowong/transparent.nvim"
-  },
-  {
-    "hachy/eva01.vim",
-    lazy = false,
-    priority = 1000,
-  },
+  {'akinsho/toggleterm.nvim', version = "*", config = true},
+	{  "catppuccin/nvim", name = "catppuccin", priority = 1000  },
+	-- {
+	-- 	"goolord/alpha-nvim",
+	--    config = function ()
+	--      require "configs.alpha"
+	--    end
+	-- },
+	{ "DaikyXendo/nvim-material-icon" },
+	{
+		"nvim-neo-tree/neo-tree.nvim",
+		branch = "v3.x",
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			-- "nvim-tree/nvim-web-devicons",
+			"MunifTanjim/nui.nvim",
+		},
+	},
+	-- { "akinsho/bufferline.nvim", version = "*", opts = {} },
+	{ "embark-theme/vim", as = "embark" },
+	-- { "akinsho/horizon.nvim", version = "*" },
+	{
+		"xiyaowong/transparent.nvim",
+	},
+	{
+		"hachy/eva01.vim",
+		lazy = false,
+		priority = 1000,
+	},
 	-- nvim-cmp
-  
+
 	{
 		"hrsh7th/nvim-cmp",
 		dependencies = {
@@ -33,7 +54,7 @@ local plugins = {
 		dependencies = {
 			"MunifTanjim/nui.nvim",
 			"nvim-lua/telescope.nvim",
-			"kyazdani42/nvim-web-devicons",
+			-- "kyazdani42/nvim-web-devicons",
 			{
 				"s1n7ax/nvim-window-picker",
 				version = "v1.*",
@@ -83,7 +104,7 @@ local plugins = {
 	-- Fashion
 	{
 		"nvim-lualine/lualine.nvim",
-		dependencies = { "nvim-tree/nvim-web-devicons" },
+		-- dependencies = { "nvim-tree/nvim-web-devicons" },
 		event = "VeryLazy",
 	},
 	{
@@ -110,21 +131,21 @@ local plugins = {
 	},
 
 	-- LSP
-  {
-    "williamboman/mason.nvim",
-    opts = {},
-  },
+	{
+		"williamboman/mason.nvim",
+		opts = {},
+	},
 	{
 		"neovim/nvim-lspconfig",
 		event = "BufRead",
 	},
-  {
-    "L3MON4D3/LuaSnip",
-    version = "v2.*", 
-  },
-  {
-    'saadparwaiz1/cmp_luasnip'
-  },
+	{
+		"L3MON4D3/LuaSnip",
+		version = "v2.*",
+	},
+	{
+		"saadparwaiz1/cmp_luasnip",
+	},
 
 	-- Complete parentheses
 	{
@@ -167,28 +188,28 @@ local plugins = {
 			vim.g.vimtex_view_method = "zathura"
 		end,
 	},
-  {
-    "j-hui/fidget.nvim",
-    opts = {
-      notification = {
-        window = {
-          winblend = 0,
-        },
-      },
-    }
-  },
-  {
-      "kylechui/nvim-surround",
-      version = "*", -- Use for stability; omit to use `main` branch for the latest features
-      event = "VeryLazy",
-      config = function()
-          require("nvim-surround").setup({
-              -- Configuration here, or leave empty to use defaults
-          })
-      end
-  },
-  { 'mrjones2014/smart-splits.nvim' },
-  { "chrisgrieser/nvim-spider", lazy = true },
+	{
+		"j-hui/fidget.nvim",
+		opts = {
+			notification = {
+				window = {
+					winblend = 0,
+				},
+			},
+		},
+	},
+	{
+		"kylechui/nvim-surround",
+		version = "*", -- Use for stability; omit to use `main` branch for the latest features
+		event = "VeryLazy",
+		config = function()
+			require("nvim-surround").setup({
+				-- Configuration here, or leave empty to use defaults
+			})
+		end,
+	},
+	{ "mrjones2014/smart-splits.nvim" },
+	{ "chrisgrieser/nvim-spider", lazy = true },
 }
 
 -- Load the plugins
@@ -214,3 +235,5 @@ require("configs.telescope")
 require("configs.vimtex")
 require("configs.codeql")
 require("configs.transparent")
+-- require("configs.bufferline")
+require("configs.neotree")

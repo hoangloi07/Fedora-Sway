@@ -1,5 +1,5 @@
 --
-vim.wo.fillchars='eob: '
+vim.o.fillchars='eob: '
 -- Leader is space
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
@@ -74,6 +74,10 @@ vim.cmd("set noshowmode")
 
 -- Yank into system clipboard
 vim.opt.clipboard = "unnamedplus"
+
+
+vim.keymap.set("n", "<leader>n", ":Neotree<CR>")
+
 
 require("nvim-ts-autotag").setup({
 	opts = {

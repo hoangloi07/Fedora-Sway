@@ -1,4 +1,4 @@
 vim.cmd([[set termguicolors]])
 vim.cmd([[set background=dark]])
 -- vim.g.mellow_transparent = true
-vim.cmd([[colorscheme eva01-LCL]])
+vim.cmd([[colorscheme embark]])
